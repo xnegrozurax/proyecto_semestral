@@ -1,0 +1,60 @@
+
+body{
+    background: url(../img/jardin-japones.jpg) no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+.inicio-sesion{
+    text-decoration: none;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(31, 139, 13, 0.67);
+    padding: 70px 30px;
+    font-family: 'calibri', sans-serif;
+    text-transform: uppercase;
+    border-radius: 50%;
+    animation: animacion 2s linear infinite;
+    text-align: center;
+}
+
+@keyframes animacion {
+    0%{
+        box-shadow: 0 0 0 0 rgb(29, 171, 209, .6), 0 0 0 0 rgb(29, 171, 209, .6);
+    }
+
+    30%{
+        box-shadow: 0 0 0 70px rgb(29, 171, 209, 0), 0 0 0 0 rgb(29, 171, 209, .6);
+    }
+
+    65%{
+        box-shadow: 0 0 0 70px rgb(29, 171, 209, 0), 0 0 0 0 rgb(29, 171, 209, .6);
+    }
+
+    100%{
+        box-shadow: 0 0 0 0 rgb(29, 171, 209, 0), 0 0 0 30px rgb(29, 171, 209, 0);
+    }
+}
+
+.navbar-expand-sm{
+    background-color: rgba(0, 0, 0, 0.796);
+}
+
+.nombre-tienda{
+    color: pink;
+}
+
+.footer{
+    background-color: rgba(0, 0, 0, 0.796);
+    color: gray;
+}
+
+
+
+
