@@ -6,6 +6,11 @@ body{
     min-height: 100vh;
     display: grid;
     grid-template-rows: auto 1fr auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+*{
+    box-sizing: border-box;
 }
 
 .inicio-sesion{
@@ -55,6 +60,94 @@ body{
     color: gray;
 }
 
+.face:hover{
+    color: white;
+}
 
+.insta:hover{
+    color: white;
+}
+
+.twitter:hover{
+    color: white;
+}
+
+/* la parte que hizo el vicente */
+
+.contenedor{
+    width: 100%;
+    padding: 15px;
+
+}
+
+.formulario{
+    background-color: aliceblue;
+    margin-top: 150px;
+    padding: 3px;
+
+}
+h1{
+    text-align: center;
+    color: blue;
+    font-size: 40px;
+
+}
+
+input[type="text"],
+input[type="password"]{
+    font-size: 20px;
+    width: 82%;
+    padding: 10px;
+    border: none;
+}
+
+.input-contenedor{
+    margin-bottom: 15px;
+    border: 1px solid #aaa;
+
+}
+.icon {
+    min-width: 50px;
+    text-align: center;
+    color: #999;
+}
+
+.button{
+    border: none;
+    width: 100%;
+    color: white;
+    background-color: blue;
+    padding: 15px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.button:hover{
+    background: cadetblue;
+}
+
+p{
+    text-align: center;
+}
+
+.link{
+    text-decoration: none;
+    color: blue;
+    font-weight: 600;
+}
+
+.link:hover{
+    color: cadetblue;
+}
+
+
+@media(min-width:768px)
+  {
+.formulario{
+        margin:auto;
+        width: 500px;
+        margin-top: 150px;
+        border-radius: 2%;
+    }
+}
 
 
