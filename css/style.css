@@ -151,3 +151,37 @@ p{
 }
 
 
+.nav-link:hover {
+    background-color: rgb(143, 82, 2);
+    color: white;
+}
+
+.nav-link{
+    color: white;
+}
+
+.nav-link:hover .fa {
+    transition: all 1s;
+    transform: rotate(360deg);
+}
+
+
+
+.avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.perfil {
+    background-image: url("../img/pink-petals-pink.gif");
+    background-size: cover;
+}
+
+hr {
+    color: white;
+}
+
+.color-izq {
+    background-color: rgb(61, 31, 2);
+}

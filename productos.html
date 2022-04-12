@@ -1,248 +1,337 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tienda de Jardinería</title>
     <!-- Latest compiled and minified CSS -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
-<link rel="stylesheet" href="css/personalizar.css">
-<link rel="stylesheet" href="css/skeleton.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/personalizar.css">
+    <link rel="stylesheet" href="css/skeleton.css">
 </head>
+
 <body>
 
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="javascript:void(0)">Logo</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mynavbar">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="javascript:void(0)">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="javascript:void(0)">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="javascript:void(0)">Link</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="text" placeholder="Search">
+                    <button class="btn btn-primary" type="button">Search</button>
+                 </form>
+            </div>
+        </div>
+    </nav> 
 
-    <div class="container">
+    <div class="container-fluid">
         <div class="row">
-            <div class="col-sm-4">
-                <div class="card">
-                    <img src="img/corta cesped.jpg" alt="" width="300" height="220">
-                    <div class="info-card">
-                        <h4>Corta Cesped</h4>
-                        <p>Marca: Motosierras El Bosque</p>
-                        <img src="" alt="">
-                        <p class="precio">$30000 <span class="u-pull-rigth">$60000</span></p>
-                        <a href="#" class="u-full-width button-primary button input agregar-carrito">Agregar al carrito</a>
+            <div class="col-sm-2 color-izq" style="min-height: 70vh;">
+                <div class="row perfil">
+                    <div class="col-sm-12 mt-3 d-flex justify-content-center">
+                        <img class="avatar" src="img/sakura.gif" alt="">
+                    </div>
+                    <div class="col-sm-12 text-white mt-3 d-flex justify-content-center">
+                        <h6>Bienvenido: </h6>
                     </div>
                 </div>
-            </div>
-            <div class="col-sm-4">
-                <div class="card">
-                    <img src="img/adorno planta pared.jpg" alt="" width="300" height="220">
-                    <div class="info-card">
-                        <h4>Adorno Planta Pared</h4>
-                        <p>Marca: Sun Garden</p>
-                        <img src="" alt="">
-                        <p class="precio">$3000 <span class="u-pull-rigth">$10000</span></p>
-                        <a href="#" class="u-full-width button-primary button input agregar-carrito">Agregar al carrito</a>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <ul class="nav nav-pills flex-column mt-4">
+                            <li class="nav-item">
+                                <a class="nav-link activo" href="#"><i class="fa-solid fa-truck"></i> Seguimiento</a>
+                            </li>
+                            <li class="nav-item mt-1">
+                                <a class="nav-link " href="#"><i class="fa-solid fa-cart-shopping"></i> Carrito</a>
+                            </li>
+                            <hr>
+                            <li class="nav-item mt-1">
+                                <a class="nav-link" href="#"><i class="fa fa-right-from-bracket"></i> Cerrar Sesión</a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
-            </div>
-            <div class="col-sm-4">
-                <div class="card">
-                    <img src="img/cactus.jpg" alt="" width="300" height="220">
-                    <div class="info-card">
-                        <h4>Cactus</h4>
-                        <p>Marca: Planta vida</p>
-                        <img src="" alt="">
-                        <p class="precio">$7000 <span class="u-pull-rigth">$14000</span></p>
-                        <a href="#" class="u-full-width button-primary button input agregar-carrito">Agregar al carrito</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row mt-3">
-            <div class="col-sm-4">
-                <div class="card">
-                    <img src="img/decoracion planta interior.webp" alt="" width="300" height="220">
-                    <div class="info-card">
-                        <h4>Deco. Planta Interior</h4>
-                        <p>Marca: Sun Garden</p>
-                        <img src="" alt="">
-                        <p class="precio">$3000 <span class="u-pull-rigth">$10000</span></p>
-                        <a href="#" class="u-full-width button-primary button input agregar-carrito">Agregar al carrito</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-4">
-                <div class="card">
-                    <img src="img/fertilizantejpg.jpg" alt="" width="300" height="220">
-                    <div class="info-card">
-                        <h4>Fertilizante</h4>
-                        <p>Marca: Liquid Garden</p>
-                        <img src="" alt="">
-                        <p class="precio">$10000 <span class="u-pull-rigth">$15000</span></p>
-                        <a href="#" class="u-full-width button-primary button input agregar-carrito">Agregar al carrito</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-4">
-                <div class="card">
-                    <img src="img/semilla de limon.jpg" alt="" width="300" height="220">
-                    <div class="info-card">
-                        <h4>Semilla de Limón</h4>
-                        <p>Marca: Magic Seed</p>
-                        <img src="" alt="">
-                        <p class="precio">$2000 <span class="u-pull-rigth">$5000</span></p>
-                        <a href="#" class="u-full-width button-primary button input agregar-carrito">Agregar al carrito</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row mt-3">
-            <div class="col-sm-4">
-                <div class="card">
-                    <img src="img/planta carnivora.jpg" alt="" width="300" height="220">
-                    <div class="info-card">
-                        <h4>Planta Carnivora</h4>
-                        <p>Marca: Plant Garden</p>
-                        <img src="" alt="">
-                        <p class="precio">$2500 <span class="u-pull-rigth">$6000</span></p>
-                        <a href="#" class="u-full-width button-primary button input agregar-carrito">Agregar al carrito</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-4">
-                <div class="card">
-                    <img src="img/semilla de naranja.jpg" alt="" width="300" height="220">
-                    <div class="info-card">
-                        <h4>Semilla de Naranja</h4>
-                        <p>Marca: Magic Seed</p>
-                        <img src="" alt="">
-                        <p class="precio">$2000 <span class="u-pull-rigth">$5000</span></p>
-                        <a href="#" class="u-full-width button-primary button input agregar-carrito">Agregar al carrito</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-4">
-                <div class="card">
-                    <img src="img/semilla de romero.jpg" alt="" width="300" height="220">
-                    <div class="info-card">
-                        <h4>Semilla de Romero</h4>
-                        <p>Marca: Magic Seed</p>
-                        <img src="" alt="">
-                        <p class="precio">$2000 <span class="u-pull-rigth">$5000</span></p>
-                        <a href="#" class="u-full-width button-primary button input agregar-carrito">Agregar al carrito</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row mt-3">
-            <div class="col-sm-4">
-                <div class="card">
-                    <img src="img/semilla de sandia.jpg" alt="" width="300" height="220">
-                    <div class="info-card">
-                        <h4>Semilla de Sandía</h4>
-                        <p>Marca: Magic Seed</p>
-                        <img src="" alt="">
-                        <p class="precio">$2000 <span class="u-pull-rigth">$5000</span></p>
-                        <a href="#" class="u-full-width button-primary button input agregar-carrito">Agregar al carrito</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-4">
-                <div class="card">
-                    <img src="img/Semillas de calabaza.webp" alt="" width="300" height="220">
-                    <div class="info-card">
-                        <h4>Semilla de Calabaza</h4>
-                        <p>Marca: Magic Seed</p>
-                        <img src="" alt="">
-                        <p class="precio">$2000 <span class="u-pull-rigth">$5000</span></p>
-                        <a href="#" class="u-full-width button-primary button input agregar-carrito">Agregar al carrito</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-4">
-                <div class="card">
-                    <img src="img/spray brillo de hojas.jpg" alt="" width="300" height="220">
-                    <div class="info-card">
-                        <h4>Spray Brillo Hoja</h4>
-                        <p>Marca: Liquid Sun</p>
-                        <img src="" alt="">
-                        <p class="precio">$7000 <span class="u-pull-rigth">$14000</span></p>
-                        <a href="#" class="u-full-width button-primary button input agregar-carrito">Agregar al carrito</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row mt-3">
-            <div class="col-sm-4">
-                <div class="card">
-                    <img src="img/macetero.jpg" alt="" width="300" height="220">
-                    <div class="info-card">
-                        <h4>Macetero</h4>
-                        <p>Marca: Plant Guardian</p>
-                        <img src="" alt="">
-                        <p class="precio">$1900 <span class="u-pull-rigth">$3900</span></p>
-                        <a href="#" class="u-full-width button-primary button input agregar-carrito">Agregar al carrito</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-4">
-                <div class="card">
-                    <img src="img/rosas.jpg" alt="" width="300" height="220">
-                    <div class="info-card">
-                        <h4>Rosas</h4>
-                        <p>Marca: God's Flowers</p>
-                        <img src="" alt="">
-                        <p class="precio">$4000 <span class="u-pull-rigth">$8900</span></p>
-                        <a href="#" class="u-full-width button-primary button input agregar-carrito">Agregar al carrito</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-4">
-                <div class="card">
-                    <img src="img/tulipale.jpg" alt="" width="300" height="220">
-                    <div class="info-card">
-                        <h4>Tulipanes</h4>
-                        <p>Marca: God's Flowers</p>
-                        <img src="" alt="">
-                        <p class="precio">$4000 <span class="u-pull-rigth">$8900</span></p>
-                        <a href="#" class="u-full-width button-primary button input agregar-carrito">Agregar al carrito</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row mt-3">
-            <div class="col-sm-4">
-                <div class="card">
-                    <img src="img/tierra de hoja.webp" alt="" width="300" height="220">
-                    <div class="info-card">
-                        <h4>Tierra de Hojas</h4>
-                        <p>Marca: Ground Garden</p>
-                        <img src="" alt="">
-                        <p class="precio">$8900 <span class="u-pull-rigth">$13000</span></p>
-                        <a href="#" class="u-full-width button-primary button input agregar-carrito">Agregar al carrito</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-4">
-                <div class="card">
-                    <img src="img/tijera de podar.jpg" alt="" width="300" height="220">
-                    <div class="info-card">
-                        <h4>Tijera de Podar</h4>
-                        <p>Marca: Cut Tools</p>
-                        <img src="" alt="">
-                        <p class="precio">$6000 <span class="u-pull-rigth">$16000</span></p>
-                        <a href="#" class="u-full-width button-primary button input agregar-carrito">Agregar al carrito</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-4">
-                <div class="card">
-                    <img src="img/manguera.jpg" alt="" width="300" height="220">
-                    <div class="info-card">
-                        <h4>Manguera</h4>
-                        <p>Marca: The Forest</p>
-                        <img src="" alt="">
-                        <p class="precio">$7000 <span class="u-pull-rigth">$17000</span></p>
-                        <a href="#" class="u-full-width button-primary button input agregar-carrito">Agregar al carrito</a>
-                    </div>
-                </div>
-            </div>
-        </div>
 
+
+            </div>
+            <div class="col-sm-10">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="card">
+                            <img src="img/corta cesped.jpg" alt="" width="300" height="220">
+                            <div class="info-card">
+                                <h4>Corta Cesped</h4>
+                                <p>Marca: Motosierras El Bosque</p>
+                                <img src="" alt="">
+                                <p class="precio">$30000 <span class="u-pull-rigth">$60000</span></p>
+                                <a href="#" class="u-full-width button-primary button input agregar-carrito">Agregar al carrito</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="card">
+                            <img src="img/adorno planta pared.jpg" alt="" width="300" height="220">
+                            <div class="info-card">
+                                <h4>Adorno Planta Pared</h4>
+                                <p>Marca: Sun Garden</p>
+                                <img src="" alt="">
+                                <p class="precio">$3000 <span class="u-pull-rigth">$10000</span></p>
+                                <a href="#" class="u-full-width button-primary button input agregar-carrito">Agregar al carrito</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="card">
+                            <img src="img/cactus.jpg" alt="" width="300" height="220">
+                            <div class="info-card">
+                                <h4>Cactus</h4>
+                                <p>Marca: Planta vida</p>
+                                <img src="" alt="">
+                                <p class="precio">$7000 <span class="u-pull-rigth">$14000</span></p>
+                                <a href="#" class="u-full-width button-primary button input agregar-carrito">Agregar al carrito</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-sm-4">
+                        <div class="card">
+                            <img src="img/decoracion planta interior.webp" alt="" width="300" height="220">
+                            <div class="info-card">
+                                <h4>Deco. Planta Interior</h4>
+                                <p>Marca: Sun Garden</p>
+                                <img src="" alt="">
+                                <p class="precio">$3000 <span class="u-pull-rigth">$10000</span></p>
+                                <a href="#" class="u-full-width button-primary button input agregar-carrito">Agregar al carrito</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="card">
+                            <img src="img/fertilizantejpg.jpg" alt="" width="300" height="220">
+                            <div class="info-card">
+                                <h4>Fertilizante</h4>
+                                <p>Marca: Liquid Garden</p>
+                                <img src="" alt="">
+                                <p class="precio">$10000 <span class="u-pull-rigth">$15000</span></p>
+                                <a href="#" class="u-full-width button-primary button input agregar-carrito">Agregar al carrito</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="card">
+                            <img src="img/semilla de limon.jpg" alt="" width="300" height="220">
+                            <div class="info-card">
+                                <h4>Semilla de Limón</h4>
+                                <p>Marca: Magic Seed</p>
+                                <img src="" alt="">
+                                <p class="precio">$2000 <span class="u-pull-rigth">$5000</span></p>
+                                <a href="#" class="u-full-width button-primary button input agregar-carrito">Agregar al carrito</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-sm-4">
+                        <div class="card">
+                            <img src="img/planta carnivora.jpg" alt="" width="300" height="220">
+                            <div class="info-card">
+                                <h4>Planta Carnivora</h4>
+                                <p>Marca: Plant Garden</p>
+                                <img src="" alt="">
+                                <p class="precio">$2500 <span class="u-pull-rigth">$6000</span></p>
+                                <a href="#" class="u-full-width button-primary button input agregar-carrito">Agregar al carrito</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="card">
+                            <img src="img/semilla de naranja.jpg" alt="" width="300" height="220">
+                            <div class="info-card">
+                                <h4>Semilla de Naranja</h4>
+                                <p>Marca: Magic Seed</p>
+                                <img src="" alt="">
+                                <p class="precio">$2000 <span class="u-pull-rigth">$5000</span></p>
+                                <a href="#" class="u-full-width button-primary button input agregar-carrito">Agregar al carrito</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="card">
+                            <img src="img/semilla de romero.jpg" alt="" width="300" height="220">
+                            <div class="info-card">
+                                <h4>Semilla de Romero</h4>
+                                <p>Marca: Magic Seed</p>
+                                <img src="" alt="">
+                                <p class="precio">$2000 <span class="u-pull-rigth">$5000</span></p>
+                                <a href="#" class="u-full-width button-primary button input agregar-carrito">Agregar al carrito</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-sm-4">
+                        <div class="card">
+                            <img src="img/semilla de sandia.jpg" alt="" width="300" height="220">
+                            <div class="info-card">
+                                <h4>Semilla de Sandía</h4>
+                                <p>Marca: Magic Seed</p>
+                                <img src="" alt="">
+                                <p class="precio">$2000 <span class="u-pull-rigth">$5000</span></p>
+                                <a href="#" class="u-full-width button-primary button input agregar-carrito">Agregar al carrito</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="card">
+                            <img src="img/Semillas de calabaza.webp" alt="" width="300" height="220">
+                            <div class="info-card">
+                                <h4>Semilla de Calabaza</h4>
+                                <p>Marca: Magic Seed</p>
+                                <img src="" alt="">
+                                <p class="precio">$2000 <span class="u-pull-rigth">$5000</span></p>
+                                <a href="#" class="u-full-width button-primary button input agregar-carrito">Agregar al carrito</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="card">
+                            <img src="img/spray brillo de hojas.jpg" alt="" width="300" height="220">
+                            <div class="info-card">
+                                <h4>Spray Brillo Hoja</h4>
+                                <p>Marca: Liquid Sun</p>
+                                <img src="" alt="">
+                                <p class="precio">$7000 <span class="u-pull-rigth">$14000</span></p>
+                                <a href="#" class="u-full-width button-primary button input agregar-carrito">Agregar al carrito</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-sm-4">
+                        <div class="card">
+                            <img src="img/macetero.jpg" alt="" width="300" height="220">
+                            <div class="info-card">
+                                <h4>Macetero</h4>
+                                <p>Marca: Plant Guardian</p>
+                                <img src="" alt="">
+                                <p class="precio">$1900 <span class="u-pull-rigth">$3900</span></p>
+                                <a href="#" class="u-full-width button-primary button input agregar-carrito">Agregar al carrito</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="card">
+                            <img src="img/rosas.jpg" alt="" width="300" height="220">
+                            <div class="info-card">
+                                <h4>Rosas</h4>
+                                <p>Marca: God's Flowers</p>
+                                <img src="" alt="">
+                                <p class="precio">$4000 <span class="u-pull-rigth">$8900</span></p>
+                                <a href="#" class="u-full-width button-primary button input agregar-carrito">Agregar al carrito</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="card">
+                            <img src="img/tulipale.jpg" alt="" width="300" height="220">
+                            <div class="info-card">
+                                <h4>Tulipanes</h4>
+                                <p>Marca: God's Flowers</p>
+                                <img src="" alt="">
+                                <p class="precio">$4000 <span class="u-pull-rigth">$8900</span></p>
+                                <a href="#" class="u-full-width button-primary button input agregar-carrito">Agregar al carrito</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-sm-4">
+                        <div class="card">
+                            <img src="img/tierra de hoja.webp" alt="" width="300" height="220">
+                            <div class="info-card">
+                                <h4>Tierra de Hojas</h4>
+                                <p>Marca: Ground Garden</p>
+                                <img src="" alt="">
+                                <p class="precio">$8900 <span class="u-pull-rigth">$13000</span></p>
+                                <a href="#" class="u-full-width button-primary button input agregar-carrito">Agregar al carrito</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="card">
+                            <img src="img/tijera de podar.jpg" alt="" width="300" height="220">
+                            <div class="info-card">
+                                <h4>Tijera de Podar</h4>
+                                <p>Marca: Cut Tools</p>
+                                <img src="" alt="">
+                                <p class="precio">$6000 <span class="u-pull-rigth">$16000</span></p>
+                                <a href="#" class="u-full-width button-primary button input agregar-carrito">Agregar al carrito</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="card">
+                            <img src="img/manguera.jpg" alt="" width="300" height="220">
+                            <div class="info-card">
+                                <h4>Manguera</h4>
+                                <p>Marca: The Forest</p>
+                                <img src="" alt="">
+                                <p class="precio">$7000 <span class="u-pull-rigth">$17000</span></p>
+                                <a href="#" class="u-full-width button-primary button input agregar-carrito">Agregar al carrito</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+
+    <footer class="footer">
+        <div class="container">
+            <nav class="row">
+                <a href="#" class="col-4 text-reset text-uppercase d-flex align-items-center">
+                    <img src="img/sakura.gif" alt="Logo sakura" class="img-logo mar-2" width="70">
+                    Sakura Garden Shopping
+                </a>
+                <ul class="col-4 list-unstyled">
+                    <li class="font-weight-bold text-uppercase">Contacto</li>
+                    <li><a href="#" class="text-reset">900 900 900</a></li>
+                    <li><a href="#" class="text-reset">+56987654321</a></li>
+                    <li><a href="#" class="text-reset">sakuragardenshopping@gmail.com</a></li>
+                </ul>
+                <ul class="col-4 list-unstyled">
+                    <li class="font-weight-bold text-uppercase">¡Síguenos en nuestras redes!</li>
+                    <li class="d-flex justify-content-between">
+                        <a href="#" class="text-reset"><i class="face fa-brands fa-facebook"></i></a>
+                        <a href="#" class="text-reset"><i class="insta fa-brands fa-instagram"></i></a>
+                        <a href="#" class="text-reset"><i class="twitter fa-brands fa-twitter"></i></i></a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
